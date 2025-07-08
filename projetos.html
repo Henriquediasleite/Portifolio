@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-white">
+    <header class="w-full px-4 py-6 flex justify-between items-center fixed">
+        <div class="flex items-center space-x-2">
+            <p class="text-xl text-white md:text-2xl font-bold">Henrique Dias</p>
+            <span class="text-blue-600 text-xl md:text-2xl font-bold">|Dev.</span>
+        </div>
+
+        <button id="menu-toggle" class="text-2xl text-white md:text-3xl relative z-50">
+            <i id="menu-icon" class="ri-menu-line cursor-pointer transition duration-300"></i>
+        </button>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-50 flex flex-col items-center justify-center space-y-6">
+        <a href="index.html" class="text-white text-xl hover:text-blue-600 transition">Início</a>
+        <a href="sobre.html" class="text-white text-xl hover:text-blue-600 transition">Sobre</a>
+        <a href="servicos.html" class="text-white text-xl hover:text-blue-600 transition">Serviços</a>
+        <a href="projetos.html" class="text-white text-xl hover:text-blue-600 transition">Projetos</a>
+        <a href="contato.html" class="text-white text-xl hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <section id="projetos" class="w-full py-16 px-4 flex flex-col items-center space-y-12">
+        <div class="text-center space-y-2">
+            <span class="text-xl md:text-2xl text-blue-600" data-aos="fade-down">Veja soluções reais</span>
+            <h2 class="text-3xl md:text-5xl font-bold" data-aos="fade-up" data-aos-delay="100">Alguns projetos</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl w-full">
+            <!-- Projeto 1 -->
+            <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg flex flex-col transition transform hover:scale-[1.02]"
+                data-aos="fade-right" data-aos-delay="200">
+                <img src="/img/Devbarber.png" alt="Projeto Dev Barber" class="w-full h-48 sm:h-56 md:h-64 object-cover">
+                <div class="p-4 sm:p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1">Dev Barber</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Plataforma moderna desenvolvida para destacar a identidade de barbearias premium. Conta com
+                        áreas dinâmicas de apresentação de serviços, agendamento online e integração com redes sociais
+                        para aumentar a presença digital.
+                    </p>
+                    <div class="flex gap-2 mb-4 text-gray-400 text-2xl">
+                        <i class="ri-html5-fill hover:text-orange-500 duration-300"></i>
+                        <i class="ri-css3-fill hover:text-blue-500 duration-300"></i>
+                        <i class="ri-javascript-fill hover:text-yellow-400 duration-300"></i>
+                    </div>
+                    <a href="https://barber-liart-kappa.vercel.app" target="_blank"
+                        class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded transition">
+                        Acesse o site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg flex flex-col transition transform hover:scale-[1.02]"
+                data-aos="fade-up" data-aos-delay="300">
+                <img src="img/Sealworld.png" alt="Projeto Seal World" class="w-full h-48 sm:h-56 md:h-64 object-cover">
+                <div class="p-4 sm:p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1">Seal World</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Página web criada para divulgar a beleza do universo marinho de forma visual e impactante.
+                        Estruturada com seções informativas, imagens de destaque e design responsivo, proporciona uma
+                        experiência agradável em qualquer dispositivo.
+                    </p>
+                    <div class="flex gap-2 mb-4 text-gray-400 text-2xl">
+                        <i class="ri-html5-fill hover:text-orange-500 duration-300"></i>
+                        <i class="ri-css3-fill hover:text-blue-500 duration-300"></i>
+                    </div>
+                    <a href="https://henriquediasleite.github.io/Seal-Word/" target="_blank"
+                        class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded transition">
+                        Acesse o site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg flex flex-col transition transform hover:scale-[1.02]"
+                data-aos="fade-left" data-aos-delay="400">
+                <img src="img/oceanis.png" alt="Projeto Oceanis" class="w-full h-48 sm:h-56 md:h-64 object-cover">
+                <div class="p-4 sm:p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1">Oceanis</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Bem-vindo ao projeto Oceanis Cruises, uma página web elegante e responsiva que apresenta os
+                        melhores cruzeiros e experiências inesquecíveis em alto-mar.
+                    </p>
+                    <div class="flex gap-2 mb-4 text-gray-400 text-2xl">
+                        <i class="ri-html5-fill hover:text-orange-500 duration-300"></i>
+                        <i class="ri-css3-fill hover:text-blue-500 duration-300"></i>
+                        <i class="ri-bootstrap-fill hover:text-purple-500 duration-300"></i>
+                    </div>
+                    <a href="https://henriquediasleite.github.io/Oceanis/" target="_blank"
+                        class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded transition">
+                        Acesse o site
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="w-full bg-gray-900 text-gray-300 py-8 px-4 mt-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-semibold">Henrique Dias | Dev.</p>
+                <p class="text-sm text-gray-400">© 2025 Henrique Dias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/headerScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

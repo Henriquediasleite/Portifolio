@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" />
+    <title>Henrique Dias - Desenvolvedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black animate-gradient flex flex-col h-screen overflow-hidden page-loading">
+
+    <header class="w-full px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <p class="text-xl text-white md:text-2xl font-bold">Henrique Dias</p>
+            <span class="text-blue-600 text-xl md:text-2xl font-bold">|Dev.</span>
+        </div>
+
+        <button id="menu-toggle" class="text-2xl text-white md:text-3xl relative z-50">
+            <i id="menu-icon" class="ri-menu-line cursor-pointer transition duration-300"></i>
+        </button>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-40 flex flex-col items-center justify-center space-y-6">
+        <a href="index.html" class="text-white text-xl hover:text-blue-600 transition">Início</a>
+        <a href="sobre.html" class="text-white text-xl hover:text-blue-600 transition">Sobre</a>
+        <a href="servicos.html" class="text-white text-xl hover:text-blue-600 transition">Serviços</a>
+        <a href="projetos.html" class="text-white text-xl hover:text-blue-600 transition">Projetos</a>
+        <a href="contato.html" class="text-white text-xl hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <main class="flex-grow flex flex-col justify-center items-center text-center fade-in">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">Henrique Dias</h1>
+
+        <div class="flex items-center mt-2">
+            <span class="text-white text-xl md:text-3xl mr-2">Desenvolvedor</span>
+            <span id="animated-text" class="text-blue-600 text-xl md:text-3xl"></span>
+            <span class="text-blue-600 text-xl md:text-3xl animate-pulse">|</span>
+        </div>
+    </main>
+
+    <footer class="w-full flex justify-center items-center pb-4 fade-in">
+        <div class="flex gap-6">
+            <a href="https://github.com/Henriquediasleite" target="_blank" class="hover:scale-110 transition-transform">
+                <i class="ri-github-fill text-white text-2xl md:text-3xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/henrique-dias-leite-80a08123a/" target="_blank"
+                class="hover:scale-110 transition-transform">
+                <i class="ri-linkedin-box-fill text-white text-2xl md:text-3xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="JS/textAnimation.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/pageTransition.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // Marca página como carregada
+        document.body.classList.remove('page-loading');
+        document.body.classList.add('page-loaded');
+    </script>
+</body>
+
+</html>

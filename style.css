@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header-scrolled {
+    background-color: rgba(3, 7, 18, 0.9);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+}
+
+.header-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Animação suave para o conteúdo quando o header fica fixo */
+.content-with-fixed-header {
+    padding-top: 80px;
+    transition: padding-top 0.3s ease-in-out;
+}
+
+/* Estilo para o logo e texto do header */
+.header-content {
+    transition: all 0.3s ease-in-out;
+}
+
+.header-scrolled .header-content {
+    transform: scale(0.95);
+}
+
+/* Animação para o ícone do menu */
+.menu-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-scrolled .menu-icon {
+    transform: scale(0.9);
+}
+

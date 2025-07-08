@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" />
+    <title>Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-white">
+    <header class="w-full px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <p class="text-xl text-white md:text-2xl font-bold">Henrique Dias</p>
+            <span class="text-blue-600 text-xl md:text-2xl font-bold">|Dev.</span>
+        </div>
+
+        <button id="menu-toggle" class="text-2xl text-white md:text-3xl relative z-50">
+            <i id="menu-icon" class="ri-menu-line cursor-pointer transition duration-300"></i>
+        </button>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-40 flex flex-col items-center justify-center space-y-6">
+        <a href="index.html" class="text-white text-xl hover:text-blue-600 transition">Início</a>
+        <a href="sobre.html" class="text-white text-xl hover:text-blue-600 transition">Sobre</a>
+        <a href="servicos.html" class="text-white text-xl hover:text-blue-600 transition">Serviços</a>
+        <a href="projetos.html" class="text-white text-xl hover:text-blue-600 transition">Projetos</a>
+        <a href="contato.html" class="text-white text-xl hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <section class="w-full py-12 px-4 flex flex-col items-center space-y-12">
+        <div class="text-center space-y-2" data-aos="fade-up" data-aos-delay="100">
+            <span class="text-xl md:text-2xl lg:text-3xl text-blue-600">Como posso te ajudar</span>
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold">Veja meus serviços</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+
+            <div class="bg-gray-800 rounded-3xl flex flex-col items-center text-center gap-4 p-6 h-full"
+                data-aos="zoom-in" data-aos-delay="150">
+                <i class="ri-shield-check-line text-4xl text-gray-400"></i>
+                <h3 class="text-xl font-semibold">Manutenção preventiva</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Problemas evitados antes que aconteçam.
+                    Acompanho o funcionamento do seu site, monitoro indicadores e aplico correções contínuas para evitar
+                    falhas.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 rounded-3xl flex flex-col items-center text-center gap-4 p-6 h-full"
+                data-aos="zoom-in" data-aos-delay="200">
+                <i class="ri-puzzle-2-line text-4xl text-gray-400"></i>
+                <h3 class="text-xl font-semibold">Funcionalidades Personalizadas</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Recursos exclusivos para o seu projeto.
+                    Desenvolvo módulos e funcionalidades sob medida, para que seu site atenda exatamente às necessidades
+                    do seu negócio.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 rounded-3xl flex flex-col items-center text-center gap-4 p-6 h-full"
+                data-aos="zoom-in" data-aos-delay="250">
+                <i class="ri-file-edit-line text-4xl text-gray-400"></i>
+                <h3 class="text-xl font-semibold">Gestão Completa de Conteúdo</h3>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Atualizações sem complicação.
+                    Cuido da publicação, revisão e organização de todo o conteúdo do seu site, mantendo tudo relevante e
+                    atualizado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full py-16 px-4 flex flex-col items-center space-y-10">
+        <!-- Background decorativo -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-20 pointer-events-none z-0">
+        </div>
+
+        <h3 class="text-2xl md:text-3xl font-semibold text-center z-10" data-aos="fade-up">
+            Por que escolher meus serviços?
+        </h3>
+
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl w-full z-10">
+            <li class="flex items-start gap-3 bg-neutral-900 p-4 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                <i class="ri-checkbox-circle-line text-gray-300 text-2xl"></i>
+                <span>Código limpo e otimizado</span>
+            </li>
+            <li class="flex items-start gap-3 bg-neutral-900 p-4 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                <i class="ri-checkbox-circle-line text-gray-300 text-2xl"></i>
+                <span>Design totalmente responsivo</span>
+            </li>
+            <li class="flex items-start gap-3 bg-neutral-900 p-4 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                <i class="ri-checkbox-circle-line text-gray-300 text-2xl"></i>
+                <span>Foco na experiência do usuário</span>
+            </li>
+            <li class="flex items-start gap-3 bg-neutral-900 p-4 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                <i class="ri-checkbox-circle-line text-gray-300 text-2xl"></i>
+                <span>Suporte técnico pós-lançamento</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="w-full py-16 px-4 flex flex-col items-center space-y-6 relative z-10">
+        <h3 class="text-2xl md:text-3xl font-semibold text-center" data-aos="fade-up">
+            Vamos conversar sobre seu projeto?
+        </h3>
+        <p class="text-center text-gray-300 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+            Entre em contato e receba um orçamento sem compromisso. Será um prazer ajudar você a transformar sua ideia
+            em realidade!
+        </p>
+        <a href="contato.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+            data-aos="zoom-in" data-aos-delay="200">
+            Solicitar Orçamento
+        </a>
+    </section>
+
+    <footer class="w-full bg-gray-900 text-gray-300 py-6 px-4 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-semibold">Henrique Dias | Dev.</p>
+                <p class="text-sm text-gray-400">© 2025 Henrique Dias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/headerScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

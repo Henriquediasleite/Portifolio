@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-white">
+    <header class="w-full px-4 py-6 flex justify-between items-center fixed">
+        <div class="flex items-center space-x-2">
+            <p class="text-xl text-white md:text-2xl font-bold">Henrique Dias</p>
+            <span class="text-blue-600 text-xl md:text-2xl font-bold">|Dev.</span>
+        </div>
+
+        <button id="menu-toggle" class="text-2xl text-white md:text-3xl relative z-50">
+            <i id="menu-icon" class="ri-menu-line cursor-pointer transition duration-300"></i>
+        </button>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-40 flex flex-col items-center justify-center space-y-6">
+        <a href="index.html" class="text-white text-xl hover:text-blue-600 transition">Início</a>
+        <a href="sobre.html" class="text-white text-xl hover:text-blue-600 transition">Sobre</a>
+        <a href="servicos.html" class="text-white text-xl hover:text-blue-600 transition">Serviços</a>
+        <a href="projetos.html" class="text-white text-xl hover:text-blue-600 transition">Projetos</a>
+        <a href="contato.html" class="text-white text-xl hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <section class="w-full pt-24 pb-12 px-4 flex flex-col items-center space-y-12">
+        <div class="text-center space-y-2 md:space-y-4" data-aos="fade-down">
+            <span class="text-xl md:text-2xl lg:text-3xl text-blue-600">Conheça um pouco</span>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold">SOBRE MIM</h1>
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-row items-start justify-between gap-8 max-w-6xl w-full">
+            <div class="flex flex-col space-y-6 text-left w-full md:max-w-xl" data-aos="fade-right">
+                <h2 class="text-2xl md:text-3xl font-semibold">Me chamo Henrique Dias</h2>
+                <p class="text-base md:text-lg leading-relaxed text-gray-200">
+                    Sou desenvolvedor web e estudante de Análise e Desenvolvimento de Sistemas (ADS). Estou sempre
+                    buscando aprimorar meus conhecimentos e criar soluções digitais de qualidade que atendam às
+                    necessidades de cada cliente.
+                </p>
+
+                <p class="text-base md:text-lg leading-relaxed text-gray-200">
+                    Se você está procurando alguém para transformar suas ideias em um site moderno, responsivo e
+                    funcional, vamos conversar!
+                </p>
+
+                <div class="flex flex-wrap gap-4 justify-start">
+                    <a href="projetos.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver
+                        Projetos</a>
+                    <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Download
+                        CV</a>
+                </div>
+
+                <div class="flex gap-4 justify-start pt-2">
+                    <a href="https://github.com/Henriquediasleite" target="_blank"><i
+                            class="ri-github-fill text-2xl hover:text-gray-500 transition"></i></a>
+                    <a href="https://www.linkedin.com/in/henrique-dias-leite-80a08123a/" target="_blank"><i
+                            class="ri-linkedin-box-fill text-2xl hover:text-blue-500 transition"></i></a>
+                    <a href="https://www.instagram.com/_henriquedias._/" target="_blank"><i
+                            class="ri-instagram-fill text-2xl hover:text-pink-500 transition"></i></a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center" data-aos="fade-left">
+                <img src="img/bestami-sarikaya-kdXzw0fd0TU-unsplash.jpg" alt="Minha foto"
+                    class="rounded-lg object-cover max-h-[400px] w-full">
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-8 py-4" data-aos="fade-up">
+            <i class="ri-arrow-down-double-line text-5xl text-blue-600 animate-bounce"></i>
+        </div>
+    </section>
+
+    <section class="w-full py-12 px-4 flex justify-center">
+        <div class="flex flex-col md:flex-row items-start justify-between gap-8 max-w-6xl w-full">
+
+            <div class="w-full md:w-1/2 flex flex-col space-y-4 text-left" data-aos="fade-right">
+                <span class="text-xl md:text-2xl text-blue-600 font-medium">Conheça minhas</span>
+                <h2 class="uppercase text-2xl md:text-4xl font-bold">Habilidades</h2>
+                <p class="text-gray-200 text-base md:text-lg leading-relaxed">
+                    Sou desenvolvedor front-end com experiência em <strong>HTML</strong>, <strong>CSS</strong> e
+                    <strong>JavaScript</strong>.
+                    Trabalho com <strong>Bootstrap</strong>, <strong>SCSS</strong> e <strong>Tailwind CSS</strong> para
+                    criar interfaces modernas e responsivas.
+                    Também tenho conhecimentos em <strong>Java</strong>, ampliando minha visão sobre desenvolvimento de
+                    aplicações.
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-3 gap-6 justify-items-start md:justify-items-center"
+                data-aos="fade-up">
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="100">
+                    <i class="ri-html5-fill text-5xl text-orange-500"></i>
+                </div>
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="200">
+                    <i class="ri-css3-fill text-5xl text-blue-500"></i>
+                </div>
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="300">
+                    <i class="ri-javascript-fill text-5xl text-yellow-400"></i>
+                </div>
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="400">
+                    <i class="ri-bootstrap-fill text-5xl text-purple-500"></i>
+                </div>
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="500">
+                    <i class="ri-tailwind-css-fill text-5xl text-cyan-400"></i>
+                </div>
+                <div class="card-tech" data-aos="fade-up" data-aos-delay="600">
+                    <i class="ri-java-fill text-5xl text-red-500"></i>
+                </div>
+            </div>
+    </section>
+
+    <footer class="w-full bg-gray-900 text-gray-300 py-8 px-4 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-semibold">Henrique Dias | Dev.</p>
+                <p class="text-sm text-gray-400">© 2025 Henrique Dias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/headerScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

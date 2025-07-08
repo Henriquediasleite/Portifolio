@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" />
+    <title>Contato</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-white">
+    <header class="w-full px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <p class="text-xl text-white md:text-2xl font-bold">Henrique Dias</p>
+            <span class="text-blue-600 text-xl md:text-2xl font-bold">|Dev.</span>
+        </div>
+
+        <button id="menu-toggle" class="text-2xl text-white md:text-3xl relative z-50">
+            <i id="menu-icon" class="ri-menu-line cursor-pointer transition duration-300"></i>
+        </button>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-40 flex flex-col items-center justify-center space-y-6">
+        <a href="index.html" class="text-white text-xl hover:text-blue-600 transition">Início</a>
+        <a href="sobre.html" class="text-white text-xl hover:text-blue-600 transition">Sobre</a>
+        <a href="servicos.html" class="text-white text-xl hover:text-blue-600 transition">Serviços</a>
+        <a href="projetos.html" class="text-white text-xl hover:text-blue-600 transition">Projetos</a>
+        <a href="contato.html" class="text-white text-xl hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <section id="contato" class="w-full py-16 px-4 flex flex-col items-center space-y-12">
+        <div class="text-center space-y-2">
+            <span class="text-xl md:text-2xl text-blue-600 font-medium">Vamos conversar</span>
+            <h2 class="text-3xl md:text-5xl font-bold">Entre em Contato</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl w-full">
+            <!-- Informações de contato -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold">Pronto para transformar suas ideias em realidade?</h3>
+                <p class="text-gray-300">
+                    Estou aqui para ajudar você a criar soluções digitais que impulsionem o crescimento do seu negócio.
+                    Entre em contato para discutirmos suas necessidades e como podemos alcançar seus objetivos juntos.
+                </p>
+                <div class="space-y-3">
+                    <p class="flex items-center gap-2 text-gray-300">
+                        <i class="ri-mail-line text-white"></i>
+                        <span>Email: contato@rmdeveloper.com.br</span>
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 mt-4">
+                    <span class="text-blue-600">Redes Sociais:</span>
+                    <a href="#" target="_blank" class="hover:text-gray-500 transition duration-300 ease-in-out"><i
+                            class="ri-github-fill text-2xl"></i></a>
+                    <a href="#" target="_blank" class="hover:text-blue-500 transition duration-300 ease-in-out"><i
+                            class="ri-linkedin-box-fill text-2xl"></i></a>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/xkgblvla" method="POST" target="_blank"
+                class="space-y-4 bg-gray-800 p-6 rounded-xl shadow-md w-full">
+                <h3 class="text-xl font-semibold">Envie sua mensagem</h3>
+
+                <div>
+                    <label class="block mb-1 text-sm">Nome*</label>
+                    <input type="text" name="Nome" required placeholder="Seu nome"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-blue-500 transition" />
+                </div>
+
+                <div>
+                    <label class="block mb-1 text-sm">WhatsApp*</label>
+                    <input type="tel" name="WhatsApp" required placeholder="(xx) xxxxx-xxxx"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-blue-500 transition" />
+                </div>
+
+                <div>
+                    <label class="block mb-1 text-sm">E-mail*</label>
+                    <input type="email" name="Email" required placeholder="exemplo@email.com"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-blue-500 transition" />
+                </div>
+
+                <div>
+                    <label class="block mb-1 text-sm">Empresa (Opcional)</label>
+                    <input type="text" name="Empresa" placeholder="Nome da empresa"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-blue-500 transition" />
+                </div>
+
+                <div>
+                    <label class="block mb-1 text-sm">Mensagem*</label>
+                    <textarea name="Mensagem" required placeholder="Descreva um pouco do seu projeto..." rows="4"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-blue-500 transition"></textarea>
+                </div>
+
+                <!-- Redirecionamento após sucesso -->
+
+                <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-medium transition duration-300 ease-in-out">
+                    Enviar Mensagem
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="w-full bg-gray-900 text-gray-300 py-8 px-4 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-semibold">Henrique Dias | Dev.</p>
+                <p class="text-sm text-gray-400">© 2025 Henrique Dias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/headerScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
